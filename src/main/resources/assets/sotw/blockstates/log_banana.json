@@ -1,0 +1,13 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "axis=y":  { "model": "sotw:log_banana" },
+    "axis=z":   { "model": "sotw:log_banana", "x": 90 },
+    "axis=x":   { "model": "sotw:log_banana", "x": 90, "y": 90 },
+    "axis=none": { "model": "sotw:log_banana" },
+
+    "inventory": {
+        "model": "sotw:log_banana"
+    }
+  }
+}

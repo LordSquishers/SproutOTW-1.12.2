@@ -1,0 +1,11 @@
+# Creative Tabs
+itemGroup.sotw=Sprouts of the Wild
+
+# Blocks
+tile.log_banana.name=Banana Log
+tile.leaves_banana.name=Banana Leaves
+tile.sapling_banana.name=Banana Sapling
+tile.banana_fruit.name=Banana
+
+# Food
+item.banana.name=Banana

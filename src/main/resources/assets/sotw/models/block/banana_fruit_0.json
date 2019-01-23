@@ -1,0 +1,6 @@
+{
+  "parent":"block/cross",
+  "textures": {
+    "cross": "sotw:blocks/banana_fruit_0"
+  }
+}

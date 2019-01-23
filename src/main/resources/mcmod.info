@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "sotw",
+    "name": "Sprouts of the Wild",
+    "description": "Some sprouts in the wild.",
+    "version": "0.0.1",
+    "mcversion": "1.12.2",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["BrusselSprout"],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

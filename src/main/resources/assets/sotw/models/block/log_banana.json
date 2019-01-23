@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "sotw:blocks/log_banana_top",
+    "side": "sotw:blocks/log_banana"
+  }
+}
