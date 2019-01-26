@@ -7,5 +7,14 @@ tile.leaves_banana.name=Banana Leaves
 tile.sapling_banana.name=Banana Sapling
 tile.banana_fruit.name=Banana
 
+# Ores
+tile.deorium_ore.name=Deorium Ore
+
+# Items
+item.starbucks_card.name=Starbucks Card
+item.deorium_ingot.name=Deorium Ingot
+
 # Food
 item.banana.name=Banana
+item.chai_latte.name=Chai Latte
+item.lemon_muffin.name=Lemon Muffin

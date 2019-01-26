@@ -11,6 +11,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModBlocks {
 
     // Ores
+    public static BlockOre deorium_ore = new BlockOre("deorium_ore", "oreDeorium");
 
     // Tile Entities
 
@@ -27,7 +28,8 @@ public class ModBlocks {
                 log_banana,
                 leaves_banana,
                 sapling_banana,
-                banana_fruit
+                banana_fruit,
+                deorium_ore
         );
     }
 
@@ -36,7 +38,8 @@ public class ModBlocks {
                 log_banana.createItemBlock(),
                 leaves_banana.createItemBlock(),
                 sapling_banana.createItemBlock(),
-                banana_fruit.createItemBlock()
+                banana_fruit.createItemBlock(),
+                deorium_ore.createItemBlock()
         );
     }
 
@@ -45,5 +48,6 @@ public class ModBlocks {
         leaves_banana.registerItemModel();
         sapling_banana.registerItemModel();
         banana_fruit.registerItemModel();
+        deorium_ore.registerItemModel();
     }
 }
