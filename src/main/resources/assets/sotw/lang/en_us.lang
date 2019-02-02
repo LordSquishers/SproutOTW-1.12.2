@@ -6,6 +6,7 @@ tile.log_banana.name=Banana Log
 tile.leaves_banana.name=Banana Leaves
 tile.sapling_banana.name=Banana Sapling
 tile.banana_fruit.name=Banana
+tile.starbucks_shop.name=Starbucks Shop
 
 # Ores
 tile.deorium_ore.name=Deorium Ore

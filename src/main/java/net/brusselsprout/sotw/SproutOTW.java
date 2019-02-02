@@ -1,8 +1,12 @@
 package net.brusselsprout.sotw;
 
+import com.google.common.graph.Network;
 import net.brusselsprout.sotw.block.ModBlocks;
 import net.brusselsprout.sotw.client.SOTWCreativeTab;
+import net.brusselsprout.sotw.gui.ModGuiHandler;
 import net.brusselsprout.sotw.item.ModItems;
+import net.brusselsprout.sotw.network.PRUStarbucksShop;
+import net.brusselsprout.sotw.network.PUStarbucksShop;
 import net.brusselsprout.sotw.proxy.CommonProxy;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -16,7 +20,9 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper;
+import net.minecraftforge.fml.relauncher.Side;
 
 @Mod(modid = SproutOTW.MODID, name = SproutOTW.NAME, version = SproutOTW.VERSION)
 public class SproutOTW {
@@ -41,7 +47,12 @@ public class SproutOTW {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        NetworkRegistry.INSTANCE.registerGuiHandler(this, new ModGuiHandler());
         proxy.registerRenderers();
+
+        network = NetworkRegistry.INSTANCE.newSimpleChannel(SproutOTW.MODID);
+        network.registerMessage(new PUStarbucksShop.Handler(), PUStarbucksShop.class, 0, Side.CLIENT);
+        network.registerMessage(new PRUStarbucksShop.Handler(), PRUStarbucksShop.class, 1, Side.SERVER);
     }
 
     @Mod.EventHandler
